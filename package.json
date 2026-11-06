@@ -8,18 +8,19 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "^15.5.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "next": "16.2.6",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
     "pg": "^8.13.0",
     "zod": "^3.24.0",
     "idmission-web-sdk": "^2.4.1",
     "qrcode.react": "^4.2.0"
   },
   "devDependencies": {
-    "typescript": "^5.7.0",
-    "@types/node": "^22.0.0",
-    "@types/react": "^19.0.0",
-    "@types/pg": "^8.11.0"
+    "typescript": "5.9.3",
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.14",
+    "@types/pg": "^8.11.0",
+    "@types/react-dom": "19.2.3"
   }
 }
