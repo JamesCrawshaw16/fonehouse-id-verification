@@ -1,6 +1,6 @@
 {
   "name": "fonehouse-id-verification",
-  "version": "0.2.0",
+  "version": "0.4.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -13,7 +13,8 @@
     "react-dom": "^19.0.0",
     "pg": "^8.13.0",
     "zod": "^3.24.0",
-    "idmission-web-sdk": "^2.4.1"
+    "idmission-web-sdk": "^2.4.1",
+    "qrcode.react": "^4.2.0"
   },
   "devDependencies": {
     "typescript": "^5.7.0",
