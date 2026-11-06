@@ -13,7 +13,7 @@
     "react-dom": "19.2.6",
     "pg": "^8.13.0",
     "zod": "^3.24.0",
-    "idmission-web-sdk": "^2.4.1",
+    "idmission-web-sdk": "2.4.1",
     "qrcode.react": "^4.2.0"
   },
   "devDependencies": {
