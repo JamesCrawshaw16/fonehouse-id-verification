@@ -99,17 +99,18 @@ export function createBrandTheme() {
 }
 
 
-export default function FonehouseCapture({journeyId,onComplete}:{journeyId:string;onComplete:()=>void}) {
+export default function FonehouseCapture({journeyId,token,onComplete}:{journeyId?:string;token?:string;onComplete:()=>void}) {
+  const id = journeyId ?? token ?? "";
   const sessionId = async () => {
-    const response = await fetch(`/api/get-session?journey=${encodeURIComponent(journeyId)}`, {cache:"no-store"});
+    const response = await fetch(`/api/get-session?journey=${encodeURIComponent(id)}`, {cache:"no-store"});
     if(!response.ok) throw new Error("Unable to start verification");
     const data = await response.json();
     return data.id as string;
   };
   return <IdAndFaceValidation
     sessionId={sessionId}
-    clientRequestID={journeyId}
-    personalData={{uniqueNumber:journeyId}}
+    clientRequestID={id}
+    personalData={{uniqueNumber:id}}
     theme={createBrandTheme()}
     verbiage={{
       idCapture:{loadingOverlay:{
